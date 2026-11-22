@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Build Our Centre — Donate | Our Centre Western Australia</title>
+  <meta name="description" content="Help Build Our Centre in Western Australia. Choose One-off, Weekly, Fortnightly, or Monthly Sadaqah Jāriyah contributions towards our Land Acquisition and Community Hub.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Utility Bar -->
+  <div class="top-utility-bar">
+    <div class="container top-utility-inner">
+      <div class="prayer-strip">
+        <span class="prayer-location-badge"><i class="fa-solid fa-mosque"></i> Thornlie, WA Prayer Times</span>
+        <div class="prayer-pills" id="thornlie-prayer-pills"></div>
+      </div>
+      <div class="utility-links">
+        <a href="mailto:info@ourcentre.org.au" class="utility-link"><i class="fa-solid fa-envelope" style="color: var(--oc-cyan-light);"></i> info@ourcentre.org.au</a>
+        <a href="https://www.instagram.com/ourcentre.org.au?fqnt=a3c0bHR1a2Fzd2xs" target="_blank" rel="noopener" class="utility-link"><i class="fa-brands fa-instagram" style="color: #FCB045;"></i> @ourcentre.org.au</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo-link">
+        <img src="assets/logo-our-centre.png" alt="Our Centre Logo" class="brand-logo-img">
+      </a>
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="donate.html" class="nav-link is-active">Donate</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="volunteer.html" class="nav-link">Volunteer</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#donate-console-main" class="btn btn-primary"><i class="fa-solid fa-heart"></i> Donate Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Dedicated Donation Hero -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <!-- Left: Donation Console (Primary Task Focus on /donation/) -->
+        <div class="donation-console js-donation-console" id="donate-console-main">
+          <div class="donation-console-header">
+            <div class="donation-console-title-group">
+              <h2>Help Build Our Centre</h2>
+              <p>100% of your donation goes directly to establishing Our Centre in WA</p>
+            </div>
+            <img src="assets/logo-icon-square.png" alt="Our Centre Icon" class="console-logo-badge">
+          </div>
+
+          <div class="sdd-section">
+            <div class="sdd-label">
+              <span>Select Frequency</span>
+              <span class="sdd-label-hint">Automated Sadaqah Jāriyah</span>
+            </div>
+            <div class="sdd-seg" role="tablist" aria-label="Donation frequency">
+              <button type="button" class="sdd-seg-btn is-active" data-type="one_time">One off</button>
+              <button type="button" class="sdd-seg-btn" data-type="weekly">Weekly</button>
+              <button type="button" class="sdd-seg-btn" data-type="fortnightly">Fortnightly</button>
+              <button type="button" class="sdd-seg-btn" data-type="monthly">Monthly</button>
+            </div>
+            <input type="hidden" class="js-sdd-type" value="one_time">
+          </div>
+
+          <div class="sdd-section">
+            <div class="sdd-label">
+              <span>Select Amount (AUD)</span>
+              <span class="sdd-label-hint">$250 = 1m² Land Share</span>
+            </div>
+            <div class="sdd-amounts" role="group" aria-label="Donation amount">
+              <button type="button" class="sdd-amt-btn" data-amount="50">$50 <small>Community</small></button>
+              <button type="button" class="sdd-amt-btn" data-amount="100">$100 <small>Waqf Share</small></button>
+              <button type="button" class="sdd-amt-btn is-active" data-amount="250">$250 <small>1m² Land</small></button>
+              <button type="button" class="sdd-amt-btn" data-amount="500">$500 <small>Masjid Pillar</small></button>
+              <button type="button" class="sdd-amt-btn" data-amount="1000">$1,000 <small>Founder Brick</small></button>
+              <button type="button" class="sdd-amt-btn sdd-custom-btn" data-amount="custom">$ Custom Amount</button>
+            </div>
+
+            <div class="sdd-custom-row" style="display: none;">
+              <input type="number" min="1" step="0.5" placeholder="Enter custom amount ($ AUD)" class="sdd-input js-sdd-custom-input">
+            </div>
+            <input type="hidden" class="js-sdd-amount" value="250">
+
+            <div class="sdd-impact-banner" aria-live="polite">
+              <i class="fa-solid fa-mosque"></i>
+              <span class="js-sdd-impact-text"><strong>$250 AUD (One-off):</strong> Funds 1 Square Metre of Land Acquisition for Our Centre in Western Australia.</span>
+            </div>
+          </div>
+
+          <div class="sdd-section">
+            <div class="sdd-label"><span>Allocation &amp; Donor Details</span></div>
+            <div class="sdd-fields-stack">
+              <select class="sdd-select js-sdd-cause" aria-label="Select Donation Cause">
+                <option value="Land Acquisition & Centre Building Fund (Sadaqah Jāriyah)">Land Acquisition &amp; Centre Building Fund (Sadaqah Jāriyah)</option>
+                <option value="Family Waqf Endowment Share">Family Waqf Endowment Share</option>
+                <option value="Full-Service Masjid & Worship Services">Full-Service Masjid &amp; Worship Services</option>
+                <option value="Youth Development, Sports Complex & Education">Youth Development, Sports Complex &amp; Education</option>
+                <option value="Crisis Accommodation & Family Counselling">Crisis Accommodation &amp; Family Counselling</option>
+              </select>
+
+              <div class="sdd-anon-row">
+                <label class="sdd-anon-label" for="page_sdd_anonymous">
+                  <span class="sdd-anon-text"><i class="fa-solid fa-user-secret" style="color: #5CE1E6;"></i> Stay anonymous</span>
+                  <span class="sdd-toggle">
+                    <input id="page_sdd_anonymous" type="checkbox" class="js-sdd-anonymous">
+                    <span class="sdd-toggle-ui" aria-hidden="true"></span>
+                  </span>
+                </label>
+              </div>
+
+              <input type="text" placeholder="Name (required unless anonymous)" class="sdd-input js-sdd-name" required>
+              <input type="email" placeholder="Email (optional)" class="sdd-input js-sdd-email">
+              <input type="text" placeholder="Dedicate on behalf of parents / loved ones (optional)" class="sdd-input js-sdd-dedicate">
+            </div>
+          </div>
+
+          <button type="button" class="sdd-donate-btn js-sdd-submit">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <span class="js-sdd-btn-label">Donate $250 AUD Now</span>
+          </button>
+          <p class="sdd-msg js-sdd-msg" style="display: none;" role="status" aria-live="polite"></p>
+
+          <div class="console-trust-row">
+            <span><i class="fa-solid fa-mosque" style="color: #4ADE80;"></i> 100% Sadaqah Jāriyah</span>
+            <span><i class="fa-solid fa-building-ngo" style="color: #67E8F9;"></i> Our Centre Western Australia</span>
+            <span><i class="fa-solid fa-seedling" style="color: #FCB045;"></i> Land &amp; Masjid Fund</span>
+          </div>
+        </div>
+
+        <!-- Right: Why Your Donation Matters + Land Acquisition Breakdown -->
+        <div>
+          <div class="hero-bismillah-wrap">
+            <img src="assets/bismillah-green.png" alt="Bismillah" class="hero-bismillah-img">
+            <span class="hero-kicker">Sadaqah Jāriyah &amp; Family Waqf</span>
+          </div>
+
+          <h1 class="hero-title" style="font-size: clamp(2.1rem, 3.6vw, 3.2rem);">
+            Build a House of Worship, Learning &amp; <span class="text-gradient">Community Care</span>
+          </h1>
+
+          <div class="hero-mission-quote">
+            “When a person dies, their deeds come to an end except for three: Sadaqah Jāriyah (continuous charity), knowledge from which benefit is gained, or a righteous child who prays for them.” — Sahih Muslim
+          </div>
+
+          <p class="hero-description">
+            Your contribution to <strong>Our Centre Ltd</strong> combines all three streams of perpetual reward: a full-service Masjid, Qur’an &amp; Islamic education classrooms for children and youth, and essential family welfare &amp; crisis support facilities.
+          </p>
+
+          <div class="land-progress-card" style="margin-bottom: 24px;">
+            <div class="land-progress-header">
+              <span class="land-progress-title"><i class="fa-solid fa-chart-line" style="color: #4ADE80;"></i> Phase 1: Land Acquisition Progress</span>
+              <span class="land-progress-badge tabular-nums js-land-pct">57.0% Funded</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill js-land-fill" style="width: 57%;"></div>
+            </div>
+            <div class="progress-meta tabular-nums">
+              <span>Raised: <strong class="js-land-raised">$684,500 AUD</strong></span>
+              <span>Goal: <strong>$1,200,000 AUD</strong></span>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div style="border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.16); position: relative;">
+              <img src="assets/masjid-prayer-hall.jpg" alt="Our Centre Masjid Prayer Hall" style="width: 100%; height: 165px; object-fit: cover;">
+              <div style="padding: 10px 12px; background: rgba(11,16,20,0.88); font-size: 0.82rem; font-weight: 700; color: #A7F3D0;">
+                <i class="fa-solid fa-mosque"></i> Full-Service Masjid Sanctuary
+              </div>
+            </div>
+            <div style="border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.16); position: relative;">
+              <img src="assets/centre-education-youth.jpg" alt="Our Centre Islamic Education Hub" style="width: 100%; height: 165px; object-fit: cover;">
+              <div style="padding: 10px 12px; background: rgba(11,16,20,0.88); font-size: 0.82rem; font-weight: 700; color: #67E8F9;">
+                <i class="fa-solid fa-book-quran"></i> Qur’an &amp; Youth Classrooms
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where Your Donation Goes (6 Pillars Breakdown) -->
+    <section class="section-pad section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker"><i class="fa-solid fa-sitemap"></i> Complete Transparency</span>
+          <h2 class="section-title">What Your <strong>Donation</strong> Builds</h2>
+          <p class="section-subtitle">Every dollar goes toward purchasing the land and establishing our 6 self-sustaining community pillars in Western Australia.</p>
+        </div>
+
+        <div class="waqf-tiers-grid">
+          <div class="waqf-tier-card">
+            <div>
+              <img src="assets/masjid-prayer-hall.jpg" alt="Full-Service Masjid Prayer Hall" style="width: 100%; height: 155px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
+              <span class="director-role">Pillar 1 &amp; 2</span>
+              <h3 style="margin-top: 10px;">Full-Service Masjid &amp; Janāzah Care</h3>
+              <p style="margin-top: 8px;">Accommodating men, women, youth, seniors, and people with special needs, plus high-standard funeral &amp; janāzah facilities.</p>
+            </div>
+            <button type="button" class="btn btn-outline-dark" data-quick-donate="250" data-quick-cause="Full-Service Masjid & Worship Services">Fund Masjid ($250)</button>
+          </div>
+
+          <div class="waqf-tier-card">
+            <div>
+              <img src="assets/centre-education-youth.jpg" alt="Qur'an & Islamic Education Classrooms" style="width: 100%; height: 155px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
+              <span class="director-role">Pillar 3</span>
+              <h3 style="margin-top: 10px;">Qur’an &amp; Islamic Education</h3>
+              <p style="margin-top: 8px;">Modern interactive classrooms for children, teens, adults, sisters, and new Muslims from basic to advanced levels.</p>
+            </div>
+            <button type="button" class="btn btn-outline-dark" data-quick-donate="100" data-quick-cause="Youth Development, Sports Complex & Education">Fund Classrooms ($100)</button>
+          </div>
+
+          <div class="waqf-tier-card">
+            <div>
+              <img src="assets/centre-sports-community.jpg" alt="Indoor Sports Complex & Youth Hub" style="width: 100%; height: 155px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
+              <span class="director-role">Pillar 4</span>
+              <h3 style="margin-top: 10px;">Indoor Sports Complex &amp; Youth Hub</h3>
+              <p style="margin-top: 8px;">Soccer, basketball, racket sports, martial arts, separate gyms for men and women, and youth leadership camps.</p>
+            </div>
+            <button type="button" class="btn btn-outline-dark" data-quick-donate="250" data-quick-cause="Youth Development, Sports Complex & Education">Fund Youth &amp; Sports ($250)</button>
+          </div>
+
+          <div class="waqf-tier-card">
+            <div>
+              <img src="assets/masjid-hero-exterior.jpg" alt="Crisis Accommodation & Family Counselling" style="width: 100%; height: 155px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
+              <span class="director-role">Pillar 5 &amp; 6</span>
+              <h3 style="margin-top: 10px;">Crisis Accommodation &amp; Counselling</h3>
+              <p style="margin-top: 8px;">Purpose-built consultation rooms for marriage support, youth counselling, Hijama wellness, and urgent crisis accommodation.</p>
+            </div>
+            <button type="button" class="btn btn-outline-dark" data-quick-donate="500" data-quick-cause="Crisis Accommodation & Family Counselling">Fund Care Rooms ($500)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="padding-bottom: 60px;">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>Our Centre &copy; Copyright 2026 — All Rights Reserved.</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="events.html">Events</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Receipt Modal -->
+  <div class="oc-modal-backdrop" id="oc-receipt-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="oc-modal-dialog">
+      <div class="oc-modal-header">
+        <h3 style="font-size: 1.15rem; font-weight: 800;">Official Donation Pledge Receipt</h3>
+        <button type="button" class="oc-modal-close js-close-modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="oc-modal-body" id="oc-receipt-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
