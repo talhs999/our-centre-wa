@@ -145,8 +145,8 @@
     monthly: 'Monthly'
   };
 
-  let raisedAmount = 684500;
-  const targetAmount = 1200000;
+  let raisedAmount = 300000;
+  const targetAmount = 3390000;
 
   function initDonationConsoles() {
     const consoles = document.querySelectorAll('.js-donation-console');
